@@ -25,8 +25,7 @@ class App:
 
 	def create_menu(self):
 		menubar = tk.Menu(self.root)
-		self.root.config(menu=menubar)d
-
+		self.root.config(menu=menubar)
 		file_menu = tk.Menu(menubar, tearoff=0)
 		menubar.add_cascade(label="File", menu=file_menu)
 		
@@ -38,7 +37,7 @@ class App:
 		login_menu.add_command(label="Authenticate", command=self.show_authentication_window)
 	
 	def open_file_picker(self):
-		file_picker_window = FilePickerWindow(self.root, self.database)
+		file_picker_window = FilePickerWindow(self.root, self.database,'C:\\Users\\Apollon\\source\\repos\\Apollon404\\tibiditi\\data_directory')
 
 	def create_file_selection(self):
 		file_frame = tk.Frame(self.root)
