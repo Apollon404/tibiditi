@@ -18,14 +18,14 @@ class App:
 
 		self.database = UserDatabase()
 
-		self.create_menu()
 		self.create_file_selection()
+		self.create_menu()
 		self.create_table()
 		self.create_user_input()
 
 	def create_menu(self):
 		menubar = tk.Menu(self.root)
-		self.root.config(menu=menubar)
+		self.root.config(menu=menubar)d
 
 		file_menu = tk.Menu(menubar, tearoff=0)
 		menubar.add_cascade(label="File", menu=file_menu)
